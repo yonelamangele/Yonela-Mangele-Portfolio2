@@ -1,0 +1,91 @@
+{
+    "aboutMe": [
+        {
+            "para": "My name is Yonela Mangele and I am currently 20 years old. I am an aspiring fullstack web developer and it is all because of my unwavering dedication and love for coding. Ever since I started coding in high school, I have always challenged myself with requiring more assignments from my lecturer so that I could hone my coding skills and also learn how to handle multiple tasks at once on a daily basis, which is a skillset I am currently mastering. When I have a group project, I enjoy leading the group because I have a creative approach to solving a problem. My sense of humour also helps to lighten the mood of my group members and when they are in a fun space to work in, they become motivated to meet the deadlines of projects we work on because as much as I tease around to create a healthy environment, I take my work seriously.",
+            "image": "https://yonelamangele.github.io/Images/20240123_201043.jpg"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Calculator",
+            "github": "https://github.com/yonelamangele/Task-3.git",
+            "live": "https://task-3-red.vercel.app/",
+            "description": "In this project, I was required to create a functional calculator.",
+            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124707.png"
+        },
+        {
+            "name": "E-commerce",
+            "github": "https://github.com/yonelamangele/Capstone-Project.git",
+            "live": "https://capstone-project-28be2.web.app",
+            "description": "In this project, I was required to create a system that will allow customers to buy or view products and be able to make use of a checkout page. In addition, a user must log in before purchasing an item or a product(s)",
+            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio1/src/images/Screenshot%202024-09-18%20141625.png"
+        },
+        {
+            "name": "BMI-Calculator",
+            "github": "https://github.com/yonelamangele/bmi.git",
+            "live": "https://bmi-theta-three.vercel.app/",
+            "description": "In this project, I was required to create a functional BMI-Calculator.",
+            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124558.png"
+        },
+        {
+            "name": "Temperature-Converter",
+            "github": "https://github.com/yonelamangele/Temperature-Converter.git",
+            "live": "https://temperature-converter-beta-jade.vercel.app/",
+            "description": "In this project, I was required to create a functional temperature-converter.",
+            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124837.png"
+        },
+        {
+            "name": "Minutes To Seconds",
+            "github": "https://github.com/yonelamangele/-mins-to-secs.git",
+            "live": "https://capstone-project-28be2.web.app",
+            "description": "In this project, I was required to create a functional converter that converts minutes to seconds.",
+            "image": "https://yonelamangele.github.io/json-thingy/Screenshot%202024-07-04%20143552.png"
+        },
+        {
+            "name": "Keyboard",
+            "github": "https://github.com/yonelamangele/keyboard.git",
+            "live": "https://keyboard-snowy.vercel.app/",
+            "description": "In this project, I was required to create a non-functional keyboard.",
+            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124746.png"
+        }
+    ],
+    "softSkills": [
+        {
+            "skillTitle": "Communication",
+            "skillImage": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio1/src/images/png-transparent-computer-icons-communication-symbol-marketing-business-communication-miscellaneous-company-text-removebg-preview.png"
+        },
+        {
+            "skillTitle": "Adaptibility",
+            "skillImage": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio1/src/images/360_F_478513787_9Jhy3TQyk3OhtgD5jHCHhxrNasERft6Y-removebg-preview.png"
+        },
+        {
+            "skillTitle": "Time Management",
+            "skillImage": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio1/src/images/images-removebg-preview.png"
+        },
+        {
+            "skillTitle": "Team Work",
+            "skillImage": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio1/src/images/1134184-removebg-preview.png"
+        }
+    ],
+    "resume": [
+        {
+            "description": "I am currently doing a 12-month coding course at Life Choices Coding Academy and learning various coding languages",
+            "year": "April 2024 - Present",
+            "placeOfInstitution": "Life Choices Coding academy",
+            "image": "https://yonelamangele.github.io/Images/logo_429x99.png"
+        },
+        {
+            "description": "I did coding from Gr10 until Gr12 at COSAT, which is a secondary school in Khayelitsha, Cape Town. I only learned mostly HTML because it was the only coding language that was provided.",
+            "year": "January 2018 - November 2022",
+            "placeOfInstitution": "Centre Of Science And Technology",
+            "image": "https://yonelamangele.github.io/Images/1630566080147.jpg"
+        }
+    ],
+    "contacts": [
+        {
+            "email": "yonelamangele1700@gmail.com",
+            "location": "Mandela Park Khayelitsha 7784",
+            "cellnumber": "068 425 5886"
+        }
+    ]
+}
