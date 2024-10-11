@@ -71,12 +71,14 @@
         {
             "description": "I am currently doing a 12-month coding course at Life Choices Coding Academy and learning various coding languages",
             "year": "April 2024 - Present",
+            "certification": "Fullstack Web Development",
             "placeOfInstitution": "Life Choices Coding academy",
             "image": "https://yonelamangele.github.io/Images/logo_429x99.png"
         },
         {
             "description": "I did coding from Gr10 until Gr12 at COSAT, which is a secondary school in Khayelitsha, Cape Town. I only learned mostly HTML because it was the only coding language that was provided.",
             "year": "January 2018 - November 2022",
+            "certification": "Matric",
             "placeOfInstitution": "Centre Of Science And Technology",
             "image": "https://yonelamangele.github.io/Images/1630566080147.jpg"
         }
