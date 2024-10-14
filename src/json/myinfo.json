@@ -17,7 +17,7 @@
             "name": "E-commerce",
             "github": "https://github.com/yonelamangele/Capstone-Project.git",
             "live": "https://capstone-project-28be2.web.app",
-            "description": "In this project, I was required to create a system that will allow customers to buy or view products and be able to make use of a checkout page. In addition, a user must log in before purchasing an item or a product(s)",
+            "description": "In this project, I was required to create a system that will allow customers to buy or view products and be able to make use of a checkout page.",
             "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio1/src/images/Screenshot%202024-09-18%20141625.png"
         },
         {
@@ -69,18 +69,20 @@
     ],
     "resume": [
         {
-            "description": "I am currently doing a 12-month coding course at Life Choices Coding Academy and learning various coding languages",
+            "description": "I am currently doing a 12-month coding course at Life Choices Coding Academy and learning various coding languages.",
             "year": "April 2024 - Present",
             "certification": "Fullstack Web Development",
             "placeOfInstitution": "Life Choices Coding academy",
-            "image": "https://yonelamangele.github.io/Images/logo_429x99.png"
+            "image": "https://yonelamangele.github.io/Images/logo_429x99.png",
+            "contact": "info@lifechoices.co.za"
         },
         {
             "description": "I did coding from Gr10 until Gr12 at COSAT, which is a secondary school in Khayelitsha, Cape Town. I only learned mostly HTML because it was the only coding language that was provided.",
             "year": "January 2018 - November 2022",
             "certification": "Matric",
             "placeOfInstitution": "Centre Of Science And Technology",
-            "image": "https://yonelamangele.github.io/Images/1630566080147.jpg"
+            "image": "https://yonelamangele.github.io/Images/1630566080147.jpg",
+            "contact": "cosat.khayelitsha@gmail.com"
         }
     ],
     "contacts": [
