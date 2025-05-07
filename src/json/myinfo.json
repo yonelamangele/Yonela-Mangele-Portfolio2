@@ -69,20 +69,28 @@
     ],
     "resume": [
         {
-            "description": "I am currently doing a 12-month coding course at Life Choices Coding Academy and learning various coding languages.",
-            "year": "April 2024 - Present",
-            "certification": "Fullstack Web Development",
-            "placeOfInstitution": "Life Choices Coding academy",
-            "image": "https://yonelamangele.github.io/Images/logo_429x99.png",
-            "contact": "info@lifechoices.co.za"
+            "description": "I did a bit of coding from Gr10 to Gr12 at COSAT, a secondary school in Khayelitsha, Cape Town.",
+            "year": "January 2018 - November 2022",
+            "placeOfInstitution": "Centre Of Science And Technology",
+            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/Cosat.png"
         },
         {
-            "description": "I did coding from Gr10 until Gr12 at COSAT, which is a secondary school in Khayelitsha, Cape Town. I only learned mostly HTML because it was the only coding language that was provided.",
-            "year": "January 2018 - November 2022",
-            "certification": "Matric",
-            "placeOfInstitution": "Centre Of Science And Technology",
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/Cosat.png",
-            "contact": "cosat.khayelitsha@gmail.com"
+            "description": "I did a 6-month coding course at Life Choices Coding Academy and got introduced to web development.",
+            "year": "April 2024 - September 2024",
+            "placeOfInstitution": "Life Choices Coding academy",
+            "image": "https://yonelamangele.github.io/Images/logo_429x99.png"
+        },
+        {
+            "description": "I got an opportunity to attend a 2-week programme where I got introduced to Cloud Computing and its benefits. ",
+            "year": "September 2024 - October 2024",
+            "placeOfInstitution": " Amazon Web Services",
+            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/featured-aws-cloud-removebg-preview.png"
+        },
+        {
+            "description": "I am currently at Life Choices Studio where I am expanding my knowledge and honing my skills in web development.",
+            "year": "October 2024 - Present",
+            "placeOfInstitution": "LC Studio",
+            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/lc_studioza_logo__1_-removebg-preview.png"
         }
     ],
     "contacts": [
