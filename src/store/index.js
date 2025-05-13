@@ -30,17 +30,29 @@ export default createStore({
   },
   actions: {
     async getAboutMe(content){
-      let fetchedInfo = await fetch('https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/json/myinfo.json')
-      let about = await fetchedInfo.json();
+      let data = await fetch('https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/json/myinfo.json')
+      let about = await data.json();
       let {aboutMe} = about
       content.commit('setAboutMe', aboutMe[0].para)
     },
     async getSoftSkills(content){
-      let fetchedInfo = await fetch('https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/json/myinfo.json')
-      let about = await fetchedInfo.json();
+      let data = await fetch('https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/json/myinfo.json')
+      let about = await data.json();
       let {softSkills} = about
       content.commit('setSoftSkills', softSkills)
       },
+    async getResume(content){
+      let data = await fetch('https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/json/myinfo.json')
+      let about = await data.json();
+      let {resume} = about
+      content.commit('setResume', resume)
+      },
+    async getProjects(content){
+      let data = await fetch('https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/json/myinfo.json')
+      let about = await data.json();
+      let {projects} = about
+      content.commit('setProjects', projects)
+      }
   },
   modules: {
   },

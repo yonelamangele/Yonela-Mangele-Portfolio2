@@ -1,15 +1,19 @@
 <template>
   <div class="home">
-    <div class="myImg">
-      <img :src="imgUrl" alt="" class="pic">
+    <div id="middle">
+      <div class="myImg">
+        <img :src="imgUrl" alt="" class="pic">
+      </div>
+      <div class="para">
+        <h1> <b> Yonela Mangele </b> </h1>
+        <h3> An Aspiring Front-End Developer </h3>
+        <div class="links">
+          <a href="https://github.com/yonelamangele" target="_blank"> <i class="fa-brands fa-github fa-2x"></i> </a> 
+          <a href="https://www.linkedin.com/in/yonela-mangele-125044316/" target="_blank"> <i class="fa-brands fa-linkedin fa-2x"></i> </a>
+        </div>
+      </div>
     </div>
-    <div class="para">
-      <h1> Welcome To My Portfolio </h1>
-      <h3> My Name Is </h3>
-      <h1> <b> Yonela Mangele </b> </h1>
-      <h3> An Aspiring Web Developer </h3>
-    </div>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -25,31 +29,67 @@ export default {
 
 <style scoped>
   .home {
+    height: 80vh;
+    place-content: center
+  }
+  #middle {
     display: flex;
-    justify-content: center;
-    height: 100vh;
+    flex-wrap: wrap;
+    justify-items: center;
     align-items: center;
     text-align: center;
-    flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
 h1, h3 {
-  color: #092635;
+  /* background-color: red; */
+  color: #9EC8B9;
+  padding: 0.5cqi;
 }
 
 .myImg {
-  margin-top: 2em;
-  padding-bottom: 2em;
+  /* margin-top: 1em; */
 }
 
 .para {
-  margin-bottom: 10px;
+
 }
 
 .pic {
-  width: 400px;
+  width: 24cqi;
   border: solid 5px #9EC8B9;
   border-radius: 7px;
+}
+
+.links {
+  padding: 0.5cqi
+}
+
+a {
+  color: #9EC8B9;
+  margin: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .pic {
+    width: 22cqi;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .pic {
+    margin-bottom: 3cqi;
+  }
+
+  h3 {
+    font-size: large;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  h3 {
+    padding: 0 4px;
+  }
 }
 
 </style>

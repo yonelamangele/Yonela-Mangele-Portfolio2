@@ -11,42 +11,48 @@
             "github": "https://github.com/yonelamangele/Task-3.git",
             "live": "https://task-3-red.vercel.app/",
             "description": "In this project, I was required to create a functional calculator.",
-            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124707.png"
+            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124707.png",
+            "technologies": "HTML, CSS & JavaScript"
         },
         {
             "name": "E-commerce",
             "github": "https://github.com/yonelamangele/Capstone-Project.git",
             "live": "https://capstone-project-28be2.web.app",
             "description": "In this project, I was required to create a system that will allow customers to buy or view products and be able to make use of a checkout page.",
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/Screenshot%202024-09-18%20141625.png"
+            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/Screenshot%202024-09-18%20141625.png",
+            "technologies": "HTML, CSS, JavaScript, Vue.js, Node.js, Express.js & MySQL"
         },
         {
             "name": "BMI-Calculator",
             "github": "https://github.com/yonelamangele/bmi.git",
             "live": "https://bmi-theta-three.vercel.app/",
             "description": "In this project, I was required to create a functional BMI-Calculator.",
-            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124558.png"
+            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124558.png",
+            "technologies": "HTML, CSS  & JavaScript"
         },
         {
             "name": "Temperature-Converter",
             "github": "https://github.com/yonelamangele/Temperature-Converter.git",
             "live": "https://temperature-converter-beta-jade.vercel.app/",
             "description": "In this project, I was required to create a functional temperature-converter.",
-            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124837.png"
+            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124837.png",
+            "technologies": "HTML, CSS & JavaScript"
         },
         {
             "name": "Minutes To Seconds",
             "github": "https://github.com/yonelamangele/-mins-to-secs.git",
             "live": "https://mins-to-secs-fawn.vercel.app/",
             "description": "In this project, I was required to create a functional converter that converts minutes to seconds.",
-            "image": "https://yonelamangele.github.io/json-thingy/Screenshot%202024-07-04%20143552.png"
+            "image": "https://yonelamangele.github.io/json-thingy/Screenshot%202024-07-04%20143552.png",
+            "technologies": "HTML, CSS & JavaScript"
         },
         {
             "name": "Keyboard",
             "github": "https://github.com/yonelamangele/keyboard.git",
             "live": "https://keyboard-snowy.vercel.app/",
             "description": "In this project, I was required to create a non-functional keyboard.",
-            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124746.png"
+            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124746.png",
+            "technologies": "HTML & CSS"
         }
     ],
     "softSkills": [
@@ -69,16 +75,10 @@
     ],
     "resume": [
         {
-            "description": "I did a bit of coding from Gr10 to Gr12 at COSAT, a secondary school in Khayelitsha, Cape Town.",
-            "year": "January 2018 - November 2022",
-            "placeOfInstitution": "Centre Of Science And Technology",
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/Cosat.png"
-        },
-        {
-            "description": "I did a 6-month coding course at Life Choices Coding Academy and got introduced to web development.",
-            "year": "April 2024 - September 2024",
-            "placeOfInstitution": "Life Choices Coding academy",
-            "image": "https://yonelamangele.github.io/Images/logo_429x99.png"
+            "description": "I am currently an intern at Life Choices Studio where I am expanding my knowledge and honing my skills in web development.",
+            "year": "October 2024 - Present",
+            "placeOfInstitution": "LC Studio",
+            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/lc_studioza_logo__1_-removebg-preview.png"
         },
         {
             "description": "I got an opportunity to attend a 2-week programme where I got introduced to Cloud Computing and its benefits. ",
@@ -87,16 +87,84 @@
             "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/featured-aws-cloud-removebg-preview.png"
         },
         {
-            "description": "I am currently at Life Choices Studio where I am expanding my knowledge and honing my skills in web development.",
-            "year": "October 2024 - Present",
-            "placeOfInstitution": "LC Studio",
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/lc_studioza_logo__1_-removebg-preview.png"
+            "description": "I did a 6-month coding course at Life Choices Coding Academy and got introduced to web development.",
+            "year": "April 2024 - September 2024",
+            "placeOfInstitution": "Life Choices Coding academy",
+            "image": "https://yonelamangele.github.io/Images/logo_429x99.png"
+        },
+        {
+            "description": "I did a bit of coding from Gr10 to Gr12 at COSAT, a secondary school in Khayelitsha, Cape Town.",
+            "year": "January 2018 - November 2022",
+            "placeOfInstitution": "Centre Of Science And Technology",
+            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/Cosat.png"
+        }
+    ],
+    "achievements": [
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
+        },
+        {
+            "name": "",
+            "image": ""
         }
     ],
     "contacts": [
         {
             "email": "yonelamangele1700@gmail.com",
-            "location": "Mandela Park Khayelitsha 7784",
+            "location": "Khayelitsha, Cape Town",
             "cellnumber": "068 425 5886"
         }
     ]

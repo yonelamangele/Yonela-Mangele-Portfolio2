@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <ul class="nav nav-pills" id="inava">
+        <ul class="nav nav-pills" id="navbar">
             <div>
                 <img :src="logoUrl" alt="" class="gang"/>
             </div>
@@ -21,6 +21,9 @@
                     <a class="nav-link" href="/contactView"> Contact </a>
                 </li>
             </div>
+            <span class="material-symbols-outlined">
+                menu
+            </span>
         </ul>
     </nav>
 </template>
@@ -35,15 +38,15 @@ export default {
 </script>
 <style scoped>
 
-#inava {
+#navbar {
     display: flex;
     justify-content: space-between;
     border: 3px solid #9EC8B9;
-
 }
 
 .nav-items {
     display: flex;
+    /* display: none; */
     padding-right: 1.5cqi;
 }
 
@@ -65,6 +68,13 @@ a:hover {
     color: grey;
 }
 
+span {
+    color: #9EC8B9;
+    place-content: center;
+    margin-right: 8px;
+    display: none;
+}
+
 .gang {
       animation: zoom-in-out 4s infinite
     }
@@ -82,6 +92,16 @@ a:hover {
         transform: scale(1);
       }
     }
+
+@media screen and (max-width: 396px) {
+    .nav-items {
+        display: none;
+    }
+    
+    span {
+        display: block;
+    }
+}
     
 </style>
 
