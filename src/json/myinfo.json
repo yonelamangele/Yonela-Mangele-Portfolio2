@@ -10,7 +10,7 @@
             "name": "Calculator",
             "github": "https://github.com/yonelamangele/Task-3.git",
             "live": "https://task-3-red.vercel.app/",
-            "description": "In this project, I was required to create a functional calculator.",
+            "description": "In this project, I built a responsive functional calculator with the use of HTML, CSS & JavaSCript.",
             "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124707.png",
             "technologies": "HTML, CSS & JavaScript"
         },
@@ -18,7 +18,7 @@
             "name": "E-commerce",
             "github": "https://github.com/yonelamangele/Capstone-Project.git",
             "live": "https://capstone-project-28be2.web.app",
-            "description": "In this project, I was required to create a system that will allow customers to buy or view products and be able to make use of a checkout page.",
+            "description": "I built a system that allows users to buy or view products and make use of the checkout page.",
             "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/Screenshot%202024-09-18%20141625.png",
             "technologies": "HTML, CSS, JavaScript, Vue.js, Node.js, Express.js & MySQL"
         },
@@ -26,7 +26,7 @@
             "name": "BMI-Calculator",
             "github": "https://github.com/yonelamangele/bmi.git",
             "live": "https://bmi-theta-three.vercel.app/",
-            "description": "In this project, I was required to create a functional BMI-Calculator.",
+            "description": "In this project, I built a system that allows a user to put in values to calculate their BMI.",
             "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124558.png",
             "technologies": "HTML, CSS  & JavaScript"
         },
@@ -34,7 +34,7 @@
             "name": "Temperature-Converter",
             "github": "https://github.com/yonelamangele/Temperature-Converter.git",
             "live": "https://temperature-converter-beta-jade.vercel.app/",
-            "description": "In this project, I was required to create a functional temperature-converter.",
+            "description": "In this project, I built a system that allows a user to put in values to convert temperature.",
             "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124837.png",
             "technologies": "HTML, CSS & JavaScript"
         },
@@ -42,7 +42,7 @@
             "name": "Minutes To Seconds",
             "github": "https://github.com/yonelamangele/-mins-to-secs.git",
             "live": "https://mins-to-secs-fawn.vercel.app/",
-            "description": "In this project, I was required to create a functional converter that converts minutes to seconds.",
+            "description": "I built a functional converter that allows a user to put in values to convert minutes to seconds.",
             "image": "https://yonelamangele.github.io/json-thingy/Screenshot%202024-07-04%20143552.png",
             "technologies": "HTML, CSS & JavaScript"
         },
@@ -50,9 +50,9 @@
             "name": "Keyboard",
             "github": "https://github.com/yonelamangele/keyboard.git",
             "live": "https://keyboard-snowy.vercel.app/",
-            "description": "In this project, I was required to create a non-functional keyboard.",
+            "description": "In this project, I built a responsive functional keyboard with the use of HTML, CSS & JavaSCript.",
             "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124746.png",
-            "technologies": "HTML & CSS"
+            "technologies": "HTML, CSS & JavaScript"
         }
     ],
     "softSkills": [

@@ -99,9 +99,6 @@ p {
 #links a img {
   width: 6cqi;
 }
-/* #tools a img {
-  width: 40px;
-} */
 
 #links {
   display: grid;

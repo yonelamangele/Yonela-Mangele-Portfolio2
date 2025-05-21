@@ -47,14 +47,6 @@ h1, h3 {
   padding: 0.5cqi;
 }
 
-.myImg {
-  /* margin-top: 1em; */
-}
-
-.para {
-
-}
-
 .pic {
   width: 24cqi;
   border: solid 5px #9EC8B9;

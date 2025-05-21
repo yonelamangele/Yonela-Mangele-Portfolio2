@@ -1,32 +1,27 @@
 <template>
     <div class="projects">
         <project-comp>
-            <!-- <template #projectSlot> -->
                 <h1> My Projects </h1>
                 <section>
-                    <div class="projects1" v-for="project in projects()" :key="project">
-                        <div class="row row-cols-1 row-cols-md-2 g-4 card-proj" id="space">
-                            <div class="col">
-                                <div class="card">
-                                    <img :src="project.image" class="card-img-top" alt="">
-                                    <div class="card-body">
-                                        <div class="try">
-                                            <h2 class="card-title"> {{ project.name }} </h2>
-                                            <p class="card-text"> {{ project.description }} </p>
-                                            <button>
-                                                <a :href="project.github" target="_blank"> Github </a>
-                                            </button>
-                                            <button>
-                                                <a :href="project.live" target="_blank"> Visit </a>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="projects1" v-for="project in projects()" :key="project.name">
+                        <div class="project-card">
+                            <figure>
+                                <img :src="project.image" alt="" /> 
+                                <figcaption>
+                                    <h2 class="title"> <b> {{ project.name }} </b> </h2>
+                                    <p class="description"> {{ project.description }} </p>
+                                    <p>  {{ project.technologies }} </p>
+                        
+                                    <!-- Buttons appear on hover -->
+                                    <div class="project-links">
+                                        <a :href="project.github" target="_blank" class="btn"> GitHub </a>
+                                        <a :href="project.live" target="_blank" class="btn"> Live Demo </a>
+                                    </div>       
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
                 </section>
-            <!-- </template> -->
         </project-comp>
     </div>
 </template>
@@ -53,70 +48,84 @@ export default {
 </script>
 <style scoped>
 
-.projects {
-  height: 200vh;
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background-color: #092635;
+  border: 2px solid #9ec8b9;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
   text-align: center;
-  justify-content: center;
-  margin: 5em 0 15em;
-  color: #9EC8B9;
+  color: #9ec8b9;
+  position: relative;
 }
 
-.card {
-    background-color: #092635;
-    color: #9EC8B9;
-    width: 350px;
-    height: 630px;
-    border-radius: 20px;
+.project-card:hover {
+  transform: scale(1.05);
 }
 
-p {
-    font-family: 'Courier New', Courier, monospace;
+.single_item {
+    width: 10cqi;
 }
 
-.col {
-    width: 350.66px;
-    height: 300px
+figure {
+  margin: 0;
+  padding: 1rem;
 }
 
-.card-img-top {
-    width: 350px;
-    height: 250px;
-    border: solid 5px #9EC8B9;
+figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #9ec8b9;
 }
 
-.card-body {
-    place-content: center;
+figcaption {
+  padding: 1rem;
 }
 
-.try {
-    padding: 20px;
-    border: solid 5px #9EC8B9;
+.title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
 }
 
-button {
-    background-color: #9EC8B9;
-    border-radius: 8px;
-    margin: 10px;
+.description {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  font-family: 'Courier New', Courier, monospace;
 }
 
-button:hover {
-    background-color: #092635;
+.project-links {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
-a {
-    text-decoration: none;
-    color: #092635;
+.project-card:hover .project-links {
+  opacity: 1;
 }
 
-a:hover {
-    color: #9EC8B9;
+.btn {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.4rem 0.8rem;
+  background-color: transparent;
+  color: #9ec8b9;
+  border: 1px solid #9ec8b9;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s;
 }
 
-section  {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    place-items: center;
-    margin-top: -170px;
-    height: 100em;
+.btn:hover {
+  background-color: #9ec8b9;
+  color: #092635;
 }
+
 </style>
