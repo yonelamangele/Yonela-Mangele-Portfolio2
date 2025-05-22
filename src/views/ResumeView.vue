@@ -116,7 +116,7 @@ export default {
 
 .resume {
   text-align: center;
-  margin: 5em 0 7em;
+  margin: 5em 0 4em;
   color: #9EC8B9;
 }
 

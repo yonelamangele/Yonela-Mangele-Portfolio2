@@ -149,8 +149,10 @@
     "contacts": [
         {
             "email": "yonelamangele1700@gmail.com",
-            "location": "Khayelitsha, Cape Town",
-            "cellnumber": "068 425 5886"
+            "location1": "Khayelitsha",
+            "location2": "Cape Town",
+            "cellnumber1": "068 425 5886",
+            "cellnumber2": "067 9356448"
         }
     ]
 }

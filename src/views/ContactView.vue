@@ -2,11 +2,9 @@
     <div class="contact-section container">
       <section class="contact-content">
         
-        <div class="info-header text-center">
-            <h2 class="main-title mt-4 mb-4"> Reach Out To Me </h2>
-          <p class="intro-text">
-            Below are my contact details and where I live. You can also send me a message to contact me using the form I provided.
-          </p>
+        <!-- <div class="info-header text-center">
+          <h2 class="main-title mt-4 mb-4"> Reach Out To Me </h2>
+          <p class="intro-text"> Below are my contact details and where I live. Feel free to send me a message to contact me. </p>
         </div>
         
         <div class="contact-row">
@@ -67,15 +65,55 @@
               </div>
             </form>
           </div>
+        </div> -->
+
+        <!-- <div class="container" v-for="detail in contacts()" :key="detail"> -->
+          <div class="container">
+          <div class="form">
+            <div class="content">
+              <div class="left-side">
+                <div class="address details">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="topic"> Address </div>
+                  <div class="text-one">  </div>
+                  <div class="text-two">  </div>
+                </div>
+                <div class="phone details">
+                  <i class="fas fa-phone-alt"></i>
+                  <div class="topic"> Phone </div>
+                  <div class="text-one">  </div>
+                  <div class="text-two">  </div>
+                </div>
+                <div class="email details">
+                  <i class="fas fa-envelope"></i>
+                  <div class="topic"> Email </div>
+                  <div class="text-one">  </div>
+                  <div class="text-two">  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
       </section>
     </div>
 </template>
+
 <script>
 export default {
-    
+  computed: {
+    contacts() {
+      return this.$store.state.contacts;
+    }
+  },
+  mounted() {
+    if (!this.contacts) {
+      this.$store.dispatch('getContacts');
+    }
+  }    
 }
 </script>
+
 <style scoped>
 
 .contact-section {

@@ -1,7 +1,9 @@
 <template>
     <div class="projects">
         <project-comp>
-                <h1> My Projects </h1>
+                <div id="myprojects">
+                    <h1> My Projects </h1>
+                </div> 
                 <section>
                     <div class="projects1" v-for="project in projects()" :key="project.name">
                         <div class="project-card">
@@ -25,6 +27,7 @@
         </project-comp>
     </div>
 </template>
+
 <script>
 import ProjectComp from '../components/ProjectComp.vue'
 export default {
@@ -46,7 +49,20 @@ export default {
     }
 }
 </script>
+
 <style scoped>
+
+.projects {
+    text-align: center;
+    margin: 4em 0 2em;
+}
+
+#myprojects {
+    background-color: #9EC8B9;
+    color: #092635;
+    border-radius: 8px;
+    margin: auto;
+}
 
 section {
   display: grid;
@@ -128,4 +144,14 @@ figcaption {
   color: #092635;
 }
 
+@media screen and (min-width: 1440px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }    
+}
+
+/* @media screen and (max-width: 420px) {
+
+} */
 </style>

@@ -78,7 +78,7 @@ export default {
 .about {
   /* height: 200vh; */
   text-align: center;
-  justify-content: center;
+  /* justify-content: center; */
   place-content: center;
   margin: 4em 0 3em;
 }
@@ -190,6 +190,7 @@ h1 {
   #links a {
     margin: 5px;
   }
+  
   #links a img {
     width: 10cqi;
   }

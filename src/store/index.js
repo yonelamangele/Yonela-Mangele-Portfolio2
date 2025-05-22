@@ -52,6 +52,12 @@ export default createStore({
       let about = await data.json();
       let {projects} = about
       content.commit('setProjects', projects)
+      },
+    async getContacts(content){
+      let data = await fetch('https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/json/myinfo.json')
+      let about = await data.json();
+      let {contacts} = about
+      content.commit('setContacts', contacts)
       }
   },
   modules: {
