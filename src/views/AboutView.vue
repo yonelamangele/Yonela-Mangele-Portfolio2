@@ -38,7 +38,7 @@
                 <h3> <b> <i> {{ skill.skillTitle }} </i> </b> </h3>
                 <img :src="skill.skillImage" alt="Skill Image" class="skill-img">
               </div>
-            </div>
+            </div> 
           </div>
         </section>
       </template>
@@ -190,7 +190,7 @@ h1 {
   #links a {
     margin: 5px;
   }
-  
+
   #links a img {
     width: 10cqi;
   }
