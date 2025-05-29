@@ -2,33 +2,35 @@
   <div id="container">
     <div class="contact-section container">
       <section class="contact-content">
-        <!-- <div class="container" v-for="detail in contacts()" :key="detail"> -->
+        <div class="heading">
+          <h1> Get In Touch With Me </h1>
+        </div>
+        <div class="container" v-for="detail in contacts" :key="detail.email">
         <div class="container1">
           <div class="content">
             <div class="left-side">
               <div class="address details">
                 <i class="fas fa-map-marker-alt"></i>
                 <div class="topic"> Address </div>
-                <div class="text-one">  </div>
-                <div class="text-two">  </div>
+                <div class="text-one"> {{ detail.location1 }} </div>
+                <div class="text-two"> {{ detail.location2 }}  </div>
               </div>
               <div class="phone details">
                 <i class="fas fa-phone-alt"></i>
                 <div class="topic"> Phone </div>
-                <div class="text-one">  </div>
-                <div class="text-two">  </div>
+                <div class="text-one"> {{ detail.cellnumber1 }} </div>
+                <div class="text-two"> {{ detail.cellnumber2 }} </div>
               </div>
               <div class="email details">
                 <i class="fas fa-envelope"></i>
                 <div class="topic"> Email </div>
-                <div class="text-one">  </div>
-                <div class="text-two">  </div>
+                <div class="text-one"> {{ detail.email }} </div>
               </div>
             </div> 
             
             <div class="right-side">
               <div class="topic-text"> Send me a message </div>
-              <p> If you are interested in contacting me or have an opportunity for me, feel free to send me a message from here. It would be my pleasure to hear from you. </p>
+              <p> {{ detail.text }} </p>
               <form action="#">
                 <div class="input-box">
                   <input type="text" placeholder="Enter your name">
@@ -46,6 +48,7 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
     </div>
   </div>
@@ -59,10 +62,8 @@ export default {
     }
   },
   mounted() {
-    if (!this.contacts) {
-      this.$store.dispatch('getContacts');
-    }
-  }    
+    this.$store.dispatch('getContacts');
+  }
 }
 </script>
 
@@ -74,12 +75,30 @@ export default {
   box-sizing: border-box;
 }
 
+h1 {
+  width: 45cqi;
+  box-shadow: 0 4px 6px #092635;
+  margin: auto;
+  background-color: #092635;
+  border-radius: 8px;
+  color: #9EC8B9;
+  box-shadow: 0 2px 9px #9EC8B9;
+}
+
 #container {
   min-height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   place-content: center;
+  text-align: center;
+  place-content: center;
+  margin: 3em 0 3em;
+}
+
+.container {
+  margin-top: 60px;
+  place-items: center;
 }
 
 .contact-section {
@@ -93,8 +112,8 @@ section {
 
 .container1 {
   width: 80%;
-  color: #092635;
-  background-color: #9EC8B9;
+  background-color: #5C8374;
+  color: #000000;
   border-radius: 10px;
   padding: 20px 30px 20px;
   box-shadow: 0 4px 6px #092635
@@ -109,6 +128,27 @@ section {
 .container1 .content .left-side {
   width: 25%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.container1 .content .left-side .details {
+  margin-bottom: 30px;
+}
+
+.content .left-side::before {
+  content: '';
+  position: absolute;
+  height: 75%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000000;
 }
 
 .content .left-side .details {
@@ -122,7 +162,128 @@ section {
 }
 
 .content .left-side .details i {
+  font-size: 25px;
+  color: #000000;
+  margin-bottom: 10px;
+}
 
+.content .left-side .details .topic {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.text-one {
+  font-size: small;
+  font-family: 'Courier New', Courier, monospace;
+}
+.text-two {
+  font-size: small;
+  font-family: 'Courier New', Courier, monospace;
+}
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.topic-text {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #F0F1F8;
+  border-radius: 8px;
+  padding: 0 15px;
+}
+
+.right-side .message-box {
+  min-height: 110px;
+}
+
+.right-side .button {
+  margin-top: 12px;
+  display: inline-block;
+}
+
+.right-side .button input[type="button"] {
+  background-color: #092635;
+  color: #9EC8B9;
+  border: 1px solid #9ec8b9;
+  font-size: 0.9rem;
+  outline: none;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.right-side .button input[type="button"]:hover {
+  background-color: #9EC8B9;
+  color: #092635;
+  border: 1px solid #092635;
+}
+
+@media screen and (max-width: 1199px) {
+  .container1 {
+    margin: 40px 0;
+    height: 100%;
+  }
+  
+  .container1 .content {
+    flex-direction: column-reverse;
+  }
+
+  .container1 .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10cqi;
+  }
+
+  .content .left-side .details i {
+    font-size: 43px;
+  }
+
+  .content .left-side .details .topic {
+    font-size: 24px;
+  }
+
+  .content .left-side .details {
+    margin: 0 30px;
+  }
+
+  .container1 .content .left-side::before {
+    display: none;
+  }
+  .container1 .content .right-side {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 420px) { 
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 

@@ -84,9 +84,11 @@
         </button>
       </div>
     </div>
+
+    <!-- <button class="alone"> View CV </button> -->
     
     <div class="btn">
-      <a href="https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/cv/My%20CV.pdf" target="_blank"> View CV </a>
+      <a href="https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/cv/My%20CV.pdf" target="_blank" id="btn"> View CV </a>
     </div>
   </resume-comp>
   <NavbarComp/>
@@ -120,39 +122,48 @@ export default {
   color: #9EC8B9;
 }
 
-#education {
-  background-color: #9EC8B9;
-  color: #092635;
-  border-radius: 8px;
+h1 {
+  width: 50cqi;
+  box-shadow: 0 4px 6px #092635;
   margin: auto;
-}
-
-#achievements {
   background-color: #092635;
-  border-radius: 6px;
-  margin: auto;
+  border-radius: 8px;
+  color: #9EC8B9;
+  box-shadow: 0 2px 9px #9EC8B9;
 }
 
 p {
   font-family: 'Courier New', Courier, monospace;
 }
 
-.btn {
+#btn {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.4rem 0.8rem;
   background-color: #092635;
+  color: #9ec8b9;
+  border: 1px solid #9ec8b9;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+#btn:hover {
+  background-color: #9ec8b9;
+  color: #092635;
+  border: 1px solid #092635;
 }
 
 h3 {
   font-weight: 900;
 }
 
-.btn a {
-  color: #9EC8B9;
-}
 
 .timeline {
   position: relative;
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 60px auto;
   padding: 0 20px;
 }
 
@@ -195,7 +206,8 @@ h3 {
 
 .text-box {
   padding: 20px 40px;
-  background: #092635;
+  background-color: #5C8374;
+  color: #000000;
   position: relative;
   border-radius: 6px;
   font-size: 15px;
@@ -304,7 +316,7 @@ small {
   height: 0;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid #9EC8B9;
+  border-left: 15px solid #5C8374;
 }
 
 .right-container-arrow {
@@ -315,7 +327,7 @@ small {
   height: 0;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-right: 15px solid #9EC8B9;
+  border-right: 15px solid #5C8374;
 }
 
 #car {
@@ -396,6 +408,12 @@ small {
   .left-container .text-box {
     margin-right: 0;
     margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    width: 300px;
   }
 }
 

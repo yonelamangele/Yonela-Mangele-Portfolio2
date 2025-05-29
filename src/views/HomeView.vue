@@ -10,6 +10,7 @@
         <div class="links">
           <a href="https://github.com/yonelamangele" target="_blank"> <i class="fa-brands fa-github fa-2x"></i> </a> 
           <a href="https://www.linkedin.com/in/yonela-mangele-125044316/" target="_blank"> <i class="fa-brands fa-linkedin fa-2x"></i> </a>
+          <a href="https://za.pinterest.com/yonelamangele/" target="_blank"> <i class="fa-brands fa-pinterest fa-2x"></i> </a>
         </div>
       </div>
     </div>
@@ -29,46 +30,84 @@ export default {
 
 <style scoped>
   .home {
-    height: 80vh;
+    margin: 7em 0 8em;
     place-content: center
+    
   }
   #middle {
     display: flex;
-    flex-wrap: wrap;
     justify-items: center;
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
+    
   }
 
-h1, h3 {
-  /* background-color: red; */
+  .para {
+    justify-items: center;
+  }
+
+h1 {
+  width: 45cqi;
+  background-color: #092635;
   color: #9EC8B9;
-  padding: 0.5cqi;
+  border-radius: 8px;
+  box-shadow: 0 2px 9px #9EC8B9;
+  margin: 20px 0;
+}
+
+h3 {
+  width: 35cqi;
+  background-color: #092635;
+  color: #9EC8B9;
+  border-radius: 8px;
+  box-shadow: 0 2px 9px #9EC8B9;
+  margin: 20px 0;
 }
 
 .pic {
-  width: 24cqi;
-  border: solid 5px #9EC8B9;
+  width: 19cqi;
+  border: solid 5px #9EC8B9; 
   border-radius: 7px;
 }
 
 .links {
-  padding: 0.5cqi
+  padding: 0.2em 0.2cqi;
+  background-color: #092635;
+  width: 190px;
+  border-radius: 8px;
+  box-shadow: 0 2px 9px #9EC8B9;
 }
 
 a {
+  padding: 1em 0.3em;
   color: #9EC8B9;
   margin: 4px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .home {
+    margin: 7em 0 8em;
+  }
   .pic {
     width: 22cqi;
   }
 }
 
-@media screen and (max-width: 396px) {
+@media screen and (max-width: 620px) {
+  .home {
+    margin: 3.3em 0;
+  }
+  #middle {
+    flex-direction: column;
+  }
+
+  .myImg {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 396px) { 
   .pic {
     margin-bottom: 3cqi;
   }
@@ -78,9 +117,26 @@ a {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 426px) {
+  .pic {
+    width: 150px;
+  }
+
+  h1 {
+    width: 280px;
+  }
+
   h3 {
     padding: 0 4px;
+    width: 240px;
+  }
+
+  .links {
+    width: 150px;
+  }
+
+  a {
+    font-size: 10px;
   }
 }
 

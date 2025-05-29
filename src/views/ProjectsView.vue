@@ -57,28 +57,33 @@ export default {
     margin: 4em 0 2em;
 }
 
-#myprojects {
-    background-color: #9EC8B9;
-    color: #092635;
-    border-radius: 8px;
-    margin: auto;
-}
-
 section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
-  padding: 2rem;
+  padding: 0 2rem;
+  margin: 60px 0;
+
+}
+
+h1 {
+  width: 45cqi;
+  box-shadow: 0 4px 6px #092635;
+  margin: auto;
+  background-color: #092635;
+  border-radius: 8px;
+  color: #9EC8B9;
+  box-shadow: 0 2px 9px #9EC8B9;
 }
 
 .project-card {
-  background-color: #092635;
-  border: 2px solid #9ec8b9;
+    background-color: #5C8374;
+    color: #000000;
+  /* border: 2px solid #9ec8b9; */
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.3s;
   text-align: center;
-  color: #9ec8b9;
   position: relative;
 }
 
@@ -130,8 +135,8 @@ figcaption {
   display: inline-block;
   margin: 0.3rem;
   padding: 0.4rem 0.8rem;
-  background-color: transparent;
-  color: #9ec8b9;
+  background-color: #092635;
+  color: #9EC8B9;
   border: 1px solid #9ec8b9;
   border-radius: 6px;
   text-decoration: none;
@@ -140,8 +145,15 @@ figcaption {
 }
 
 .btn:hover {
-  background-color: #9ec8b9;
-  color: #092635;
+    background-color: #9ec8b9;
+    color: #092635;
+    border: 1px solid #092635;
+}
+
+@media screen and (max-width: 1023px) {
+    .project-links {
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 1440px) {
