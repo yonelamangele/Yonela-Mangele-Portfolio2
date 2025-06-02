@@ -73,11 +73,11 @@ export default {
 .about {
   text-align: center;
   place-content: center;
-  margin: 3em 0 3em;
+  margin: 3.3em 0 3em;
 }
 
 section {
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 #sidebyside {
@@ -123,12 +123,12 @@ p {
 }
 
 .skills-container {
-  margin: 20px;
+  margin: 6cqi 2cqi 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .skill-card {
@@ -171,7 +171,7 @@ a {
   }
 
   #links {
-    margin: 30px 16cqi;
+    margin: 6cqi 16cqi;
   }
 }
 

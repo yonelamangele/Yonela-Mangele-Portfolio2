@@ -3,7 +3,7 @@
     <div class="contact-section container">
       <section class="contact-content">
         <div class="heading">
-          <h1> Get In Touch With Me </h1>
+          <h1> Let's Connect </h1>
         </div>
         <div class="container" v-for="detail in contacts" :key="detail.email">
         <div class="container1">
@@ -15,34 +15,34 @@
                 <div class="text-one"> {{ detail.location1 }} </div>
                 <div class="text-two"> {{ detail.location2 }}  </div>
               </div>
+              <div class="email details">
+                <i class="fas fa-envelope"></i>
+                <div class="topic"> Email </div>
+                <div class="text-one"> {{ detail.email }} </div>
+              </div>
               <div class="phone details">
                 <i class="fas fa-phone-alt"></i>
                 <div class="topic"> Phone </div>
                 <div class="text-one"> {{ detail.cellnumber1 }} </div>
                 <div class="text-two"> {{ detail.cellnumber2 }} </div>
               </div>
-              <div class="email details">
-                <i class="fas fa-envelope"></i>
-                <div class="topic"> Email </div>
-                <div class="text-one"> {{ detail.email }} </div>
-              </div>
             </div> 
             
             <div class="right-side">
               <div class="topic-text"> Send me a message </div>
               <p> {{ detail.text }} </p>
-              <form action="#">
+              <form @submit.prevent="sendEmail">
                 <div class="input-box">
-                  <input type="text" placeholder="Enter your name">
+                  <input type="text" v-model="form.name" placeholder="Enter your name" required>
                 </div>
                 <div class="input-box">
-                  <input type="text" placeholder="Enter your email">
+                  <input type="email" v-model="form.email" placeholder="Enter your email" required>
                 </div>
                 <div class="input-box message-box">
-                  <textarea></textarea>
+                  <textarea v-model="form.message" placeholder="Your message" required></textarea>
                 </div>
                 <div class="button">
-                  <input type="button" value="Send Now">
+                  <input type="submit" value="Send Now">
                 </div>
               </form>
             </div>
@@ -55,7 +55,41 @@
 </template>
 
 <script>
+
+import { reactive } from 'vue'
+import emailjs from '@emailjs/browser'
+
+const SERVICE_ID = 'service_zflg7vo'
+const TEMPLATE_ID = 'template_4byerar'
+const PUBLIC_KEY = 'Pe8kJJFxjgS8pUG18'
+
 export default {
+
+  setup() {
+    const form = reactive({
+      name: '',
+      email: '',
+      message: ''
+    })
+
+    const sendEmail = () => {
+      emailjs
+        .send(SERVICE_ID, TEMPLATE_ID, form, PUBLIC_KEY)
+        .then(() => {
+          alert('Message sent successfully!')
+          form.name = ''
+          form.email = ''
+          form.message = ''
+        })
+        .catch((error) => {
+          console.error('FAILED...', error)
+          alert('Message failed to send.')
+        })
+    }
+
+    return { form, sendEmail }
+  },
+
   computed: {
     contacts() {
       return this.$store.state.contacts;
@@ -93,11 +127,11 @@ h1 {
   place-content: center;
   text-align: center;
   place-content: center;
-  margin: 3em 0 3em;
+  margin: 3.3em 0 3em;
 }
 
 .container {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   place-items: center;
 }
 
@@ -107,7 +141,6 @@ h1 {
 
 section {
   place-items: center;
-
 }
 
 .container1 {
@@ -116,7 +149,9 @@ section {
   color: #000000;
   border-radius: 10px;
   padding: 20px 30px 20px;
-  box-shadow: 0 4px 6px #092635
+  box-shadow: 0 4px 6px #092635;
+  margin: 6cqi 0;
+  height: 100%;
 }
 
 .container1 .content {
@@ -216,7 +251,7 @@ p {
   display: inline-block;
 }
 
-.right-side .button input[type="button"] {
+.right-side .button input[type="submit"] {
   background-color: #092635;
   color: #9EC8B9;
   border: 1px solid #9ec8b9;
@@ -229,15 +264,17 @@ p {
   transition: all 0.5s ease;
 }
 
-.right-side .button input[type="button"]:hover {
+.right-side .button input[type="submit"]:hover {
   background-color: #9EC8B9;
   color: #092635;
   border: 1px solid #092635;
 }
 
+
+
 @media screen and (max-width: 1199px) {
   .container1 {
-    margin: 40px 0;
+    margin: 6cqi 0 0;
     height: 100%;
   }
   
@@ -275,8 +312,22 @@ p {
   }
 }
 
+@media screen and (max-width: 930px) {
+  h1 {
+    /* width: 500px; */
+  }
+}
+
 @media screen and (max-width: 768px) {
-  
+  p {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 420px) { 
@@ -284,6 +335,16 @@ p {
     width: 100%;
     overflow: hidden;
   }
+}
+
+@media screen and (max-width: 375px) {
+  /* .container {
+    margin: 60px 20px 0;
+  } */
+  /* .container1 {
+    margin: 40px 20px 0;
+     padding: 20px 20px;
+  } */
 }
 
 

@@ -53,7 +53,7 @@ h1 {
   color: #9EC8B9;
   border-radius: 8px;
   box-shadow: 0 2px 9px #9EC8B9;
-  margin: 20px 0;
+  padding: 0 0 7px 0;
 }
 
 h3 {
@@ -87,8 +87,9 @@ a {
 
 @media screen and (max-width: 768px) {
   .home {
-    margin: 7em 0 8em;
+    margin: 9.5em 0 12em;
   }
+  
   .pic {
     width: 22cqi;
   }

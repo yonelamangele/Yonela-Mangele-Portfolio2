@@ -54,7 +54,7 @@ export default {
 
 .projects {
     text-align: center;
-    margin: 4em 0 2em;
+    margin: 3.3em 0 2em;
 }
 
 section {
@@ -62,12 +62,12 @@ section {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 2rem;
   padding: 0 2rem;
-  margin: 60px 0;
+  margin: 6cqi 0 0;
 
 }
 
 h1 {
-  width: 45cqi;
+  width: 50cqi;
   box-shadow: 0 4px 6px #092635;
   margin: auto;
   background-color: #092635;
@@ -85,6 +85,7 @@ h1 {
   transition: transform 0.3s;
   text-align: center;
   position: relative;
+  box-shadow: 0 5px 7px #092635
 }
 
 .project-card:hover {
@@ -96,8 +97,8 @@ h1 {
 }
 
 figure {
-  margin: 0;
-  padding: 1rem;
+    margin: 0;
+    padding: 1rem;
 }
 
 figure img {
@@ -138,7 +139,7 @@ figcaption {
   background-color: #092635;
   color: #9EC8B9;
   border: 1px solid #9ec8b9;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.3s;
@@ -154,6 +155,12 @@ figcaption {
     .project-links {
         opacity: 1;
     }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 1440px) {

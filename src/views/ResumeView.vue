@@ -118,7 +118,7 @@ export default {
 
 .resume {
   text-align: center;
-  margin: 5em 0 4em;
+  margin: 3.3em 0 4em;
   color: #9EC8B9;
 }
 
@@ -132,18 +132,23 @@ h1 {
   box-shadow: 0 2px 9px #9EC8B9;
 }
 
+.btn {
+  margin-top: 3cqi;
+  padding: 0;
+}
+
 p {
   font-family: 'Courier New', Courier, monospace;
 }
 
 #btn {
   display: inline-block;
-  margin: 0.3rem;
+  /* margin: 0.3rem; */
   padding: 0.4rem 0.8rem;
   background-color: #092635;
   color: #9ec8b9;
   border: 1px solid #9ec8b9;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 0.9rem;
   transition: all 0.3s;
@@ -163,7 +168,7 @@ h3 {
 .timeline {
   position: relative;
   max-width: 1200px;
-  margin: 60px auto;
+  margin: 6cqi auto;
   padding: 0 20px;
 }
 
@@ -332,12 +337,12 @@ small {
 
 #car {
   place-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 6cqi;
 }
 
 #carouselExampleRide {
   width: 270px !important;
-  margin-top: 50px;
+  margin-top: 6cqi;
   box-shadow: 0 5px 7px #092635;
   border-radius: 7px;
 }
@@ -370,7 +375,7 @@ small {
 
 @media screen and (max-width: 675px) {
   .timeline {
-    margin: 50px auto;
+    margin: 6cqi auto;
   }
 
   .timeline::after {

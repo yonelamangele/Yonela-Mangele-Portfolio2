@@ -18,7 +18,7 @@
             "name": "E-commerce",
             "github": "https://github.com/yonelamangele/Capstone-Project.git",
             "live": "https://capstone-project-28be2.web.app",
-            "description": "I built a system that allows users to buy or view products and use the checkout page.",
+            "description": "I built a system that allows users to buy or view products and make use of the checkout page.",
             "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/Screenshot%202024-09-18%20141625.png",
             "technologies": "HTML, CSS, JavaScript & Vue.js"
         },
