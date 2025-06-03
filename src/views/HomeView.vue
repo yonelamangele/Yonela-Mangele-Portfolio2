@@ -108,36 +108,40 @@ a {
   }
 }
 
+@media screen and (max-width: 426px) {
+  .pic {
+    width: 150px;
+  }
+  
+  h1 {
+    width: 280px;
+  }
+  
+  h3 {
+    padding: 0 4px;
+    width: 240px;
+  }
+  
+  .links {
+    width: 150px;
+  }
+  
+  a {
+    font-size: 10px;
+  }
+}
+
 @media screen and (max-width: 396px) { 
+  .home {
+    height: 120vh;
+  }
+
   .pic {
     margin-bottom: 3cqi;
   }
 
   h3 {
     font-size: large;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .pic {
-    width: 150px;
-  }
-
-  h1 {
-    width: 280px;
-  }
-
-  h3 {
-    padding: 0 4px;
-    width: 240px;
-  }
-
-  .links {
-    width: 150px;
-  }
-
-  a {
-    font-size: 10px;
   }
 }
 

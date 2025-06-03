@@ -261,7 +261,7 @@ p {
   margin: 0.3rem;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease
 }
 
 .right-side .button input[type="submit"]:hover {
