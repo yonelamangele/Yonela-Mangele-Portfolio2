@@ -134,7 +134,7 @@ a {
 @media screen and (max-width: 396px) { 
   .home {
     height: 70vh;
-    margin-top: 5em;
+    margin-top: 4.7em;
   }
 
   .pic {
