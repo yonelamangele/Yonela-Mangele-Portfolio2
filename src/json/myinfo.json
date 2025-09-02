@@ -2,16 +2,16 @@
     "aboutMe": [
         {
             "para": "My name is Yonela Mangele and I am an aspiring front-end web developer. Ever since I started coding in 2020, I have always challenged myself with requiring more assignments from my lecturers so that I could hone my skills and also learn how to handle multiple tasks at once on a daily basis, which is a skillset I am currently mastering. I also try by all means to keep up with updates in the tech world so that I can be steps ahead of anything that comes my way.",
-            "image": "https://yonelamangele.github.io/Images/20240123_201043.jpg"
+            "image": "https://yonelamangele.github.io/github-images/oie_21426114tE129UH.png"
         }
     ],
-    "projects": [
+    "pro~jects": [
         {
             "name": "Calculator",
             "github": "https://github.com/yonelamangele/Task-3.git",
             "live": "https://task-3-red.vercel.app/",
             "description": "In this project, I built a responsive functional calculator with the use of HTML, CSS & JavaSCript.",
-            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124707.png",
+            "image": "https://yonelamangele.github.io/github-images/oie_2144342Sf6RmzN8.png",
             "technologies": "HTML, CSS & JavaScript"
         },
         {
@@ -19,7 +19,7 @@
             "github": "https://github.com/yonelamangele/Capstone-Project.git",
             "live": "https://capstone-project-28be2.web.app",
             "description": "I built a system that allows users to buy or view products and make use of the checkout page.",
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/Screenshot%202024-09-18%20141625.png",
+            "image": "https://yonelamangele.github.io/github-images/oie_21427235IbAwghc.png",
             "technologies": "HTML, CSS, JavaScript & Vue.js"
         },
         {
@@ -27,7 +27,7 @@
             "github": "https://github.com/yonelamangele/bmi.git",
             "live": "https://bmi-theta-three.vercel.app/",
             "description": "In this project, I built a system that allows a user to put in values to calculate their BMI.",
-            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124558.png",
+            "image": "https://yonelamangele.github.io/github-images/oie_2144422i3dj6CRm.png",
             "technologies": "HTML, CSS  & JavaScript"
         },
         {
@@ -35,7 +35,7 @@
             "github": "https://github.com/yonelamangele/Temperature-Converter.git",
             "live": "https://temperature-converter-beta-jade.vercel.app/",
             "description": "In this project, I built a system that allows a user to put in values to convert temperature.",
-            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124837.png",
+            "image": "https://yonelamangele.github.io/github-images/oie_2143542jdOZZqV9.png",
             "technologies": "HTML, CSS & JavaScript"
         },
         {
@@ -43,7 +43,7 @@
             "github": "https://github.com/yonelamangele/-mins-to-secs.git",
             "live": "https://mins-to-secs-fawn.vercel.app/",
             "description": "I built a functional converter that allows a user to put in values to convert minutes to seconds.",
-            "image": "https://yonelamangele.github.io/json-thingy/Screenshot%202024-07-04%20143552.png",
+            "image": "https://yonelamangele.github.io/github-images/oie_2143021U2HSPiCd.png",
             "technologies": "HTML, CSS & JavaScript"
         },
         {
@@ -51,7 +51,7 @@
             "github": "https://github.com/yonelamangele/keyboard.git",
             "live": "https://keyboard-snowy.vercel.app/",
             "description": "In this project, I built a responsive functional keyboard with the use of HTML, CSS & JavaSCript.",
-            "image": "https://yonelamangele.github.io/YMvueportifolio/src/imgs/Screenshot%202024-07-02%20124746.png",
+            "image": "https://yonelamangele.github.io/github-images/oie_2143749r9IGaQi8.png",
             "technologies": "HTML, CSS & JavaScript"
         }
     ],
