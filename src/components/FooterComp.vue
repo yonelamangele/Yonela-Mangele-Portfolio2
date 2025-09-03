@@ -19,6 +19,10 @@ export default {
   text-align: center;
 }
 
+p {
+  margin: 2em 0 1em 0;
+}
+
 @media screen and (max-width: 396px) {
   p {
     font-size: small;

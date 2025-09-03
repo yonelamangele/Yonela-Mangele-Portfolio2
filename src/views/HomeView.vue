@@ -22,7 +22,7 @@
 export default {
   data() {
     return {
-      imgUrl: "https://yonelamangele.github.io/Images/20240422_122539.jpg"
+      imgUrl: "https://yonelamangele.github.io/github-images/oie_21426114tE129UH.png"
     }
   },
 }
@@ -31,9 +31,10 @@ export default {
 <style scoped>
   .home {
     margin: 7em 0 8em;
-    place-content: center
-    
+    place-content: center;
+    height: 35vh
   }
+
   #middle {
     display: flex;
     justify-items: center;
@@ -97,7 +98,7 @@ a {
 
 @media screen and (max-width: 620px) {
   .home {
-    margin: 3.3em 0;
+    margin: 51px 0;
   }
   #middle {
     flex-direction: column;
@@ -109,6 +110,11 @@ a {
 }
 
 @media screen and (max-width: 426px) {
+  .home {
+    height: 57vh;
+    margin-top: 4.4em;
+  }
+
   .pic {
     width: 150px;
   }
@@ -131,9 +137,16 @@ a {
   }
 }
 
+@media screen and (max-width: 416px) {
+  .home {
+    height: 57vh;
+    margin-top: 4.4em;
+  }
+}
+
 @media screen and (max-width: 396px) { 
   .home {
-    height: 70vh;
+    height: 58vh;
     margin-top: 4.4em;
   }
 

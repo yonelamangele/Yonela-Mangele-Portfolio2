@@ -26,58 +26,43 @@
       <div id="achievements">
         <h1> My Achievements </h1>
       </div>
+      
       <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="@/AWS/1.png" class="d-block w-100">
+            <img :src="imgUrl1" class="d-block w-100">
           </div>
+          
           <div class="carousel-item">
-            <img src="@/AWS/2.png" class="d-block w-100">
+            <img :src="imgUrl2" class="d-block w-100">
           </div>
+          
           <div class="carousel-item">
-            <img src="@/AWS/3.png" class="d-block w-100">
+            <img :src="imgUrl3" class="d-block w-100">
           </div>
+          
           <div class="carousel-item">
-            <img src="@/AWS/4.png" class="d-block w-100">
+            <img :src="imgUrl4" class="d-block w-100">
           </div>
+          
           <div class="carousel-item">
-            <img src="@/AWS/5.png" class="d-block w-100">
+            <img :src="imgUrl5" class="d-block w-100">
           </div>
+          
           <div class="carousel-item">
-            <img src="@/AWS/6.png" class="d-block w-100">
+            <img :src="imgUrl6" class="d-block w-100">
           </div>
+          
           <div class="carousel-item">
-            <img src="@/AWS/7.png" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="@/AWS/8.png" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="@/AWS/9.png" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="@/AWS/10.png" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="@/AWS/11.png" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="@/AWS/12.png" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="@/AWS/13.png" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="@/AWS/14.png" class="d-block w-100">
-          </div>
-          <div class="carousel-item">
-            <img src="@/AWS/15.png" class="d-block w-100">
+            <img :src="imgUrl7" class="d-block w-100">
           </div>
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
+        
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
@@ -109,6 +94,17 @@ export default {
   mounted() {
     if (!this.resume) {
       this.$store.dispatch('getResume');
+    }
+  },
+  data() {
+    return {
+      imgUrl1: 'https://yonelamangele.github.io/github-images/oie_nqXOIiQrW03Y.png',
+      imgUrl2: 'https://yonelamangele.github.io/github-images/oie_Oacsfk7UFne7.png',
+      imgUrl3: 'https://yonelamangele.github.io/github-images/oie_LSO8vlCjgZMZ.png',
+      imgUrl4: 'https://yonelamangele.github.io/github-images/oie_4XsAiNaYyisu.png',
+      imgUrl5: 'https://yonelamangele.github.io/github-images/oie_979LRfHgtlyS.png',
+      imgUrl6: 'https://yonelamangele.github.io/github-images/oie_So68I83Grbil.png',
+      imgUrl7: 'https://yonelamangele.github.io/github-images/oie_fiSMMm7JVZjI.png'
     }
   }
 };

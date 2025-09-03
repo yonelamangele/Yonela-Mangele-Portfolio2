@@ -9,7 +9,6 @@
 import FooterComp from './components/FooterComp.vue';
 import NavbarComp from './components/NavbarComp.vue';
 import SpinnerComp from './components/SpinnerComp.vue';
-import '../public/main.css'
 
 export default {
   components : {

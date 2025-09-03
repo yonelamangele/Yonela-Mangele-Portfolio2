@@ -12,12 +12,12 @@
             <div class="skills">  
               <h1 class="tech"> Technical Skills </h1>
               <p id="links">
-                <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5"/> </a> 
-                <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3"/> </a> 
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript"/> </a> 
+                <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://yonelamangele.github.io/github-images/oie_3SfD14kWtQ8O-removebg-preview.png" alt="html5"/> </a> 
+                <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://yonelamangele.github.io/github-images/oie_Gg662cSz6pRu-removebg-preview.png" alt="css3"/> </a> 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://yonelamangele.github.io/github-images/oie_JSQbCTA8U6ij.png" alt="javascript"/> </a> 
                 <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap"/> </a> 
-                <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs"/> </a>
-                <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git"/> </a>
+                <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://yonelamangele.github.io/github-images/oie_xgJ5plKHX3vT-removebg-preview.png" alt="vuejs"/> </a>
+                <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://yonelamangele.github.io/github-images/oie_VVVffB41bK8a__1_-removebg-preview.png" alt="git"/> </a>
               </p>
             </div>
           </div>

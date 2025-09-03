@@ -1,8 +1,7 @@
 {
     "aboutMe": [
         {
-            "para": "My name is Yonela Mangele and I am an aspiring front-end web developer. Ever since I started coding in 2020, I have always challenged myself with requiring more assignments from my lecturers so that I could hone my skills and also learn how to handle multiple tasks at once on a daily basis, which is a skillset I am currently mastering. I also try by all means to keep up with updates in the tech world so that I can be steps ahead of anything that comes my way.",
-            "image": "https://yonelamangele.github.io/github-images/oie_21426114tE129UH.png"
+            "para": "My name is Yonela Mangele and I am an aspiring front-end web developer. Ever since I started coding in 2020, I have always challenged myself with requiring more assignments from my lecturers so that I could hone my skills and also learn how to handle multiple tasks at once on a daily basis, which is a skillset I am currently mastering. I also try by all means to keep up with updates in the tech world so that I can be steps ahead of anything that comes my way."
         }
     ],
     "projects": [
@@ -75,75 +74,51 @@
     ],
     "resume": [
         {
-            "description": "I am currently an intern at Life Choices Studio where I am expanding my knowledge and honing my skills in web development.",
-            "year": "October 2024 - Present",
+            "description": "Got an opportunity to be an intern at Life Choices Studio where I expanded my knowledge and honed my skills in web development.",
+            "year": "October 2024 - April 2025",
             "placeOfInstitution": "LC Studio",
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/lc_studioza_logo__1_-removebg-preview.png"
+            "image": "https://yonelamangele.github.io/github-images/oie_3141831HrW1PyCM.png"
         },
         {
-            "description": "I got an opportunity to attend a 2-week programme where I got introduced to Cloud Computing and its benefits. ",
+            "description": "Got an opportunity to attend a 2-week programme where I got introduced to Cloud Computing and its benefits. ",
             "year": "September 2024 - October 2024",
             "placeOfInstitution": " Amazon Web Services",
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/featured-aws-cloud-removebg-preview.png"
+            "image": "https://yonelamangele.github.io/github-images/oie_3141858xHWZinir.png"
         },
         {
-            "description": "I did a 6-month coding course at Life Choices Coding Academy and got introduced to web development.",
+            "description": "Attended a 6-month coding course at Life Choices Coding Academy and got introduced to web development.",
             "year": "April 2024 - September 2024",
             "placeOfInstitution": "Life Choices Coding academy",
-            "image": "https://yonelamangele.github.io/Images/logo_429x99.png"
+            "image": "https://yonelamangele.github.io/github-images/oie_313460Z4NSZULq.png"
         },
         {
-            "description": "I did a bit of coding from Gr10 to Gr12 at COSAT, a secondary school in Khayelitsha, Cape Town.",
+            "description": "Did a bit of coding from Gr10 to Gr12 at COSAT, a secondary school in Khayelitsha, Cape Town.",
             "year": "January 2018 - November 2022",
             "placeOfInstitution": "Centre Of Science And Technology",
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/images/Cosat.png"
+            "image": "https://yonelamangele.github.io/github-images/oie_3141932fC0Io7fR.png"
         }
     ],
     "achievements": [
         {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/1.png"
+            "image": "https://yonelamangele.github.io/github-images/oie_nqXOIiQrW03Y.png"
         },
         {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/2.png"
+            "image": "https://yonelamangele.github.io/github-images/oie_Oacsfk7UFne7.png"
         },
         {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/3.png"
+            "image": "https://yonelamangele.github.io/github-images/oie_LSO8vlCjgZMZ.png"
         },
         {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/4.png"
+            "image": "https://yonelamangele.github.io/github-images/oie_4XsAiNaYyisu.png"
         },
         {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/5.png"
+            "image": "https://yonelamangele.github.io/github-images/oie_979LRfHgtlyS.png"
         },
         {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/6.png"
+            "image": "https://yonelamangele.github.io/github-images/oie_So68I83Grbil.png"
         },
         {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/7.png"
-        },
-        {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/8.png"
-        },
-        {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/9.png"
-        },
-        {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/10.png"
-        },
-        {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/11.png"
-        },
-        {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/12.png"
-        },
-        {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/13.png"
-        },
-        {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/14.png"
-        },
-        {
-            "image": "https://yonelamangele.github.io/Yonela-Mangele-Portfolio2/src/AWS/15.png"
+            "image": "https://yonelamangele.github.io/github-images/oie_fiSMMm7JVZjI.png"
         }
     ],
     "contacts": [
