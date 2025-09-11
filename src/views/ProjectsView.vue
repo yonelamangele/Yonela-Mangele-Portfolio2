@@ -1,38 +1,46 @@
 <template>
+  <div v-if="isLoading" class="preloader-wrapper">
+    <spinner-comp />
+  </div>
+  
+  <div v-else>
     <div class="projects">
-        <project-comp>
-                <div id="myprojects">
-                    <h1> My Projects </h1>
-                </div> 
-                <section>
-                    <div class="projects1" v-for="project in projects()" :key="project.name">
-                        <div class="project-card">
-                            <figure>
-                                <img :src="project.image" alt="" /> 
-                                <figcaption>
-                                    <h2 class="title"> <b> {{ project.name }} </b> </h2>
-                                    <p class="description"> {{ project.description }} </p>
-                                    <p>  {{ project.technologies }} </p>
-                        
-                                    <!-- Buttons appear on hover -->
-                                    <div class="project-links">
-                                        <a :href="project.github" target="_blank" class="btn"> GitHub </a>
-                                        <a :href="project.live" target="_blank" class="btn"> Live Demo </a>
-                                    </div>       
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </section>
-        </project-comp>
+      <project-comp>
+        <div>
+          <h1> My Projects </h1>
+        </div> 
+      
+        <section>
+          <div class="projects1" v-for="project in projects()" :key="project.name">
+            <div class="project-card">
+              <figure>
+                <img :src="project.image" alt="" /> 
+                <figcaption>
+                  <h2 class="title"> <b> {{ project.name }} </b> </h2>
+                  <p class="description"> {{ project.description }} </p>
+                  <p>  {{ project.technologies }} </p>
+                  <div class="project-links">
+                    <a :href="project.github" target="_blank" class="btn"> GitHub </a>
+                    <a :href="project.live" target="_blank" class="btn"> Live Demo </a>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </project-comp>
     </div>
+  </div>
 </template>
 
 <script>
+import SpinnerComp from '@/components/SpinnerComp.vue'
 import ProjectComp from '../components/ProjectComp.vue'
+
 export default {
     components: {
-        ProjectComp
+      SpinnerComp,
+      ProjectComp
     },
     methods: {
         projects() {
@@ -45,12 +53,35 @@ export default {
         }
     },
     mounted() {
-        this.getProjects
+      this.getProjects,
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          this.isLoading = false;
+        }, 3000)
+      })
+    }, 
+    data() {
+      return {
+        isLoading: true
+      }
     }
 }
 </script>
 
 <style scoped>
+
+.preloader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #5C8374;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
 
 .projects {
     text-align: center;

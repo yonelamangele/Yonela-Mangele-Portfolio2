@@ -1,16 +1,23 @@
 <template>
   <div class="home">
-    <div id="middle">
-      <div class="myImg">
-        <img :src="imgUrl" alt="" class="pic">
-      </div>
-      <div class="para">
-        <h1> <b> Yonela Mangele </b> </h1>
-        <h3> An Aspiring Front-End Developer </h3>
-        <div class="links">
-          <a href="https://github.com/yonelamangele" target="_blank"> <i class="fa-brands fa-github fa-2x"></i> </a> 
-          <a href="https://www.linkedin.com/in/yonela-mangele-125044316/" target="_blank"> <i class="fa-brands fa-linkedin fa-2x"></i> </a>
-          <a href="https://za.pinterest.com/yonelamangele/" target="_blank"> <i class="fa-brands fa-pinterest fa-2x"></i> </a>
+    <div v-if="isLoading" class="preloader-wrapper">
+      <spinner-comp />
+    </div>
+    
+    <div v-else>
+      <div id="middle">
+        <div class="myImg">
+          <img :src="imgUrl" alt="" class="pic">
+        </div>
+      
+        <div class="para">
+          <h1> <b> Yonela Mangele </b> </h1>
+          <h3> An Aspiring Front-End Developer </h3>
+          <div class="links">
+            <a href="https://github.com/yonelamangele" target="_blank"> <i class="fa-brands fa-github fa-2x"></i> </a> 
+            <a href="https://www.linkedin.com/in/yonela-mangele-125044316/" target="_blank"> <i class="fa-brands fa-linkedin fa-2x"></i> </a>
+            <a href="https://za.pinterest.com/yonelamangele/" target="_blank"> <i class="fa-brands fa-pinterest fa-2x"></i> </a>
+          </div>
         </div>
       </div>
     </div>
@@ -19,20 +26,47 @@
 
 <script>
 
+import SpinnerComp from '../components/SpinnerComp.vue';
+
 export default {
+  components: {
+    SpinnerComp
+  },
   data() {
     return {
-      imgUrl: "https://yonelamangele.github.io/github-images/oie_21426114tE129UH.png"
+      imgUrl: "https://yonelamangele.github.io/github-images/oie_21426114tE129UH.png",
+      isLoading: true
     }
   },
+  mounted() {
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        this.isLoading = false;
+      }, 3000)
+    })
+  }
 }
 </script>
 
 <style scoped>
+  
+  .preloader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #5C8374;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
   .home {
-    margin: 7em 0 8em;
+    margin: 6.95em 0 6.95em;
     place-content: center;
-    height: 35vh
+    /* height: 35vh */
   }
 
   #middle {
@@ -86,9 +120,21 @@ a {
   margin: 4px;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (min-width: 1440px) {
   .home {
-    margin: 10em 0 14em;
+    height: 38vh !important;
+    margin: 10em 0 5.5em !important
+  }
+} */
+
+@media screen and (max-width: 1024px) {
+  .home {
+    height: 34vh !important;
+    margin: 9.2em 0 6em !important
+  }
+
+  #middle {
+    height: 240px;
   }
   
   .pic {
@@ -96,10 +142,19 @@ a {
   }
 }
 
-@media screen and (max-width: 620px) {
-  .home {
-    margin: 51px 0;
+@media screen and (max-width: 920px) {
+  .pic {
+    width: 28cqi;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    margin: 9.2em 0 7.5em !important
+  }
+}
+
+@media screen and (max-width: 620px) {
   #middle {
     flex-direction: column;
   }
@@ -111,12 +166,16 @@ a {
 
 @media screen and (max-width: 426px) {
   .home {
-    height: 57vh;
-    margin-top: 4.4em;
+    height: 58.5vh !important;
+    margin: 1.9em 0 4.9em !important
+  }
+
+  #middle {
+    margin-top: -65px;
   }
 
   .pic {
-    width: 150px;
+    width: 40cqi
   }
   
   h1 {
@@ -137,17 +196,9 @@ a {
   }
 }
 
-@media screen and (max-width: 416px) {
-  .home {
-    height: 57vh;
-    margin-top: 4.4em;
-  }
-}
-
 @media screen and (max-width: 396px) { 
   .home {
-    height: 58vh;
-    margin-top: 4.4em;
+    margin: 3.5em 0 4.1em !important
   }
 
   .pic {
@@ -156,6 +207,12 @@ a {
 
   h3 {
     font-size: large;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .pic {
+    width: 10em
   }
 }
 
