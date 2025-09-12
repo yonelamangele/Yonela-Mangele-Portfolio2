@@ -158,7 +158,7 @@ a {
   #middle {
     flex-direction: column;
   }
-
+  
   .myImg {
     margin-bottom: 35px;
   }
