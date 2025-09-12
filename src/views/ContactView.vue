@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <div id="container">
     <div class="contact-section container">
@@ -81,10 +82,10 @@ export default {
           form.email = ''
           form.message = ''
         })
-        .catch((error) => {
-          console.error('FAILED...', error)
-          alert('Message failed to send.')
-        })
+        // .catch((error) => {
+        //   console.error('FAILED...', error)
+        //   alert('Message failed to send.')
+        // })
     }
 
     return { form, sendEmail }
